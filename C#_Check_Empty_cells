@@ -1,3 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Language Name="C#" EntryPoint="Main" />
+  <Reference Assembly="System.dll" />
+  <Reference Assembly="mscorlib.dll" />  
+  <Reference Assembly="System.Xml.dll" />
+  <Reference Assembly="System.Xml.Linq.dll" />
+  <Reference Assembly="System.Linq.dll" />
+  <Reference Assembly="System.Data.dll" />
+  <Reference Assembly="System.Core.dll" />
+  <Reference Assembly="System.IO.Compression.dll" />
+  <Reference Assembly="System.IO.Compression.FileSystem.dll" />
+    <ScriptCode>
+<![CDATA[
+using System;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Reflection;
+using System.Globalization;
+
+namespace MultilingualXlsx
+{
+    public class MultiLanguageFileXlsx_Prep
+    {
+        #region Methods
 public static void Main(string inputFile, string correlatedFile, StringDictionary context)
 {
     // ...
